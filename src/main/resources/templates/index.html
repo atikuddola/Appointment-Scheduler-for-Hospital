@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+
+    <title> HMS </title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link th:href="@{/css/responsive.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div class="hero_area">
+
+    <div class="hero_bg_box">
+        <img src="images/hero-bg.png" alt="">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="/home">
+            <span>
+              HMS
+            </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/doctors">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+
+                        <form class="form-inline">
+                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        WE OFFER STREAMLINED APPOINTMENT BOOKING
+                                    </h1>
+                                    <p>
+                                        Book appointments effortlessly on our user-friendly platform, avoiding wait times and complications. Convenient access to dedicated healthcare professionals is just a click away.
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        EFFORTLESS DIAGNOSTIC TEST BOOKING
+                                    </h1>
+                                    <p>
+                                        Effortlessly schedule diagnostic tests on our platform. Choose the tests you need, pick a time slot, and get prompt confirmation—making the entire process stress-free for every patient.
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        EXCEPTIONAL CARE FOR YOUR WELL-BEING
+                                    </h1>
+                                    <p>
+
+                                        Receive personalized, high-quality care from our experienced team of doctors. Our comprehensive healthcare services prioritize your well-being for a healthier, happier life.
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#customCarousel1" data-slide-to="1"></li>
+                <li data-target="#customCarousel1" data-slide-to="2"></li>
+            </ol>
+        </div>
+
+    </section>
+    <!-- end slider section -->
+</div>
+
+
+<!-- department section -->
+
+<section class="department_section layout_padding">
+    <div class="department_container">
+        <div class="container ">
+            <div class="heading_container heading_center">
+                <h2>
+                    Our Departments
+                </h2>
+                <p>
+                    Explore specialized care in Cardiology, Diagnosis, Surgery and Urology within our comprehensive healthcare services.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="images/s1.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Cardiology
+                            </h5>
+                            <p>
+                                Elevate your heart health with our leading-edge Cardiology department, providing advanced care and innovative solutions for cardiovascular well-being.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="images/s3.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Surgery
+                            </h5>
+                            <p>
+                                Experience excellence in surgical care with our Surgery department, where skilled surgeons and state-of-the-art facilities come together to deliver optimal outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="images/s4.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Urology
+                            </h5>
+                            <p>
+                                Find specialized care for urological concerns in our Urology department, where expert practitioners offer comprehensive solutions to ensure your urological health and wellness.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="images/s2.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Diagnosis
+                            </h5>
+                            <p>
+                                Trust in precision and accuracy with our Diagnosis department, where cutting-edge medical assessments are tailored to ensure accurate and timely insights into your health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <a href="">
+                    View All
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end department section -->
+
+<!-- about section -->
+
+<section class="about_section layout_margin-bottom">
+    <div class="container  ">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="img-box">
+                    <img src="images/about-img.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            About <span>Us</span>
+                        </h2>
+                    </div>
+                    <p>
+                        Welcome to HMS, where health meets compassion.
+                        Our commitment is to provide exceptional healthcare services tailored to your well-being. With a team of dedicated doctors and state-of-the-art facilities,
+                        we prioritize personalized care, ensuring you experience the highest standard of medical attention. At HMS, your health is our priority,
+                        and we strive to create a healthier and happier community, one patient at a time. Trust us for comprehensive healthcare solutions that go beyond treatment —
+                        they reflect our genuine care for your health journey.
+                    </p>
+                    <a href="">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end about section -->
+
+<!-- doctor section -->
+
+<section class="doctor_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Our Doctors
+            </h2>
+            <p class="col-md-10 mx-auto px-0">
+                Meet some of our expert doctors at HMS, dedicated to delivering exceptional healthcare. With specialized expertise and a commitment to your well-being, our doctors ensure you receive the highest standard of personalized care. Trust in the expertise of our medical team for a healthier life.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 mx-auto">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/d1.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <div class="social_box">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <h5>
+                            Dr. Sharmin Nahar Bashar
+                        </h5>
+                        <h6 class="">
+                            Urologist
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mx-auto">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/d2.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <div class="social_box">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <h5>
+                            Dr. Md. Masud Un Nabi
+                        </h5>
+                        <h6 class="">
+                            Cardiologist
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mx-auto">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/d3.jpeg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <div class="social_box">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <h5>
+                            Prof. Dr. Tahmina Hossain
+                        </h5>
+                        <h6 class="">
+                            Neurosurgeon
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <a href="doctors.html">
+                View All
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- end doctor section -->
+
+<!-- contact section -->
+<section class="contact_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Get In Touch
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container contact-form">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="col-lg-6">
+                                <div>
+                                    <input type="text" placeholder="Your Name" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <input type="text" placeholder="Phone Number" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div>
+                            <input type="text" class="message-box" placeholder="Message" />
+                        </div>
+                        <div class="btn_box">
+                            <button>
+                                SEND
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+<!--            <div class="col-md-6">-->
+<!--                <div class="map_container">-->
+<!--                    <div class="map">-->
+<!--                        <iframe-->
+<!--                                width="100%"-->
+<!--                                height="100%"-->
+<!--                                frameborder="0"-->
+<!--                                style="border: 0"-->
+<!--                                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Latitude,Longitude"-->
+<!--                                allowfullscreen-->
+<!--                        ></iframe>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="col-md-6">
+                <div class="map_container">
+                    <div class="map">
+                        <div id="googleMap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end contact section -->
+
+<!-- footer section -->
+<footer class="footer_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 footer_col">
+                <div class="footer_contact">
+                    <h4>
+                        Reach at..
+                    </h4>
+                    <div class="contact_link_box">
+                        <a href="">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>
+                  BRAC University, Dhaka
+                </span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>
+                  Call +8801754616082
+                </span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>
+                  atikuddola@gmail.com
+                </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/atik.uddola">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shams.hehe">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 footer_col">
+                <div class="footer_detail">
+                    <h4>
+                        About
+                    </h4>
+                    <p>
+                        At HMS, we're committed to your well-being through personalized and comprehensive healthcare services, delivered by a skilled team in state-of-the-art facilities.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2 mx-auto footer_col">
+                <div class="footer_link_box">
+                    <h4>
+                        Links
+                    </h4>
+                    <div class="footer_links">
+                        <a class="active" href="/index">
+                            Home
+                        </a>
+
+                        <a class="" href="/doctors">
+                            Doctors
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 footer_col ">
+                <h4>
+                    Get Connected
+                </h4>
+                <form action="#">
+                    <input type="email" placeholder="Enter email" />
+                    <button type="submit">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- footer section -->
+
+<!-- jQery -->
+<script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+<!-- popper js -->
+<script th:src="@{https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js}" crossorigin="anonymous"></script>
+<!-- bootstrap js -->
+<script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+<!-- owl slider -->
+<script type="text/javascript" th:src="@{https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js}"></script>
+<!-- custom js -->
+<script type="text/javascript" th:src="@{/js/custom.js}"></script>
+<!-- Google Map -->
+<script th:src="@{https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap}"></script>
+<!-- End Google Map -->
+
+</body>
+
+</html>
